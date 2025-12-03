@@ -1065,6 +1065,8 @@ footer {
     font-weight: 600;
 }
 
+
+
 @keyframes progress {
     0% {
         width: 0%;
@@ -1072,5 +1074,72 @@ footer {
 
     100% {
         width: 70%;
+    }
+}
+
+/* ============================================
+   SECTION VIDÉO PROMOTIONNELLE
+   ============================================ */
+
+.video-promo {
+    padding: 6rem 5%;
+    background: var(--blanc);
+}
+
+.video-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    margin: 3rem auto 0;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(154, 105, 255, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 90px rgba(154, 105, 255, 0.3);
+}
+
+/* Pour vidéo locale */
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Pour YouTube/Vimeo iframe */
+.video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+
+/* Responsive pour la vidéo */
+@media (max-width: 768px) {
+    .video-promo {
+        padding: 4rem 4%;
+    }
+
+    .video-wrapper {
+        border-radius: 20px;
+        margin: 2rem auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-promo {
+        padding: 3rem 3%;
+    }
+
+    .video-wrapper {
+        border-radius: 15px;
+        margin: 2rem auto 0;
     }
 }
