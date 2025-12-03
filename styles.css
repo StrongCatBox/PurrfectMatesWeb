@@ -437,11 +437,11 @@ section {
 }
 
 .phone-mockup {
-    width: 280px;
+    /* width: 280px;
     height: 560px;
-    background: var(--blanc);
+    background: var(--blanc); */
     border-radius: 40px;
-    padding: 15px;
+    /* padding: 15px; */
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
     position: relative;
     transition: transform 0.4s ease;
